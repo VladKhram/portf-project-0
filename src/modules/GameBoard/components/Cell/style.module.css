@@ -1,0 +1,21 @@
+.cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell svg {
+  width: calc(var(--cell-size) - 20%);
+  height: calc(var(--cell-size) - 20%);
+  fill: red;
+}
+
+.black {
+  background-color: blue;
+}
+
+.white {
+  background-color: white;
+}

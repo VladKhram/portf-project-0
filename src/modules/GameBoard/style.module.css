@@ -1,0 +1,8 @@
+.board {
+  height: calc(var(--cell-size) * 8);
+  width: calc(var(--cell-size) * 8);
+  border: solid black 1px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: row;
+}
