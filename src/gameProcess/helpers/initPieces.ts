@@ -10,7 +10,7 @@ import {
 type IPiece = IPiecePlayer & IBoardCoordinates;
 type ITempPiece = Partial<IPiece>;
 
-export const initPieces = (color: COLORS): ITempPiece[] => {
+const initPieces = (color: COLORS): ITempPiece[] => {
   let pieces: ITempPiece[] = [];
   const piecesAxis = color === COLORS.WHITE ? 0 : 7;
   const pawnsAxis = color === COLORS.WHITE ? 1 : 6;

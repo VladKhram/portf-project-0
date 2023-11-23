@@ -9,7 +9,8 @@
 .cell svg {
   width: calc(var(--cell-size) - 20%);
   height: calc(var(--cell-size) - 20%);
-  fill: red;
+  stroke: black;
+  stroke-width: 3%;
 }
 
 .black {
@@ -18,4 +19,12 @@
 
 .white {
   background-color: white;
+}
+
+.mount {
+  box-shadow: 0 0 10px black;
+  z-index: 1;
+}
+.lowland {
+  box-shadow: inset 0 0 10px black;
 }

@@ -1,11 +1,4 @@
-import {
-  FunctionComponent,
-  ReactElement,
-  ReactNode,
-  SVGProps,
-  useEffect,
-  useState,
-} from "react";
+import { FunctionComponent, SVGProps, useEffect, useState } from "react";
 import { COLORS, PIECES } from "../../helpers/gameBoard";
 import { ReactComponent as Pawn } from "./../../../../assets/pawn.svg";
 import { ReactComponent as King } from "./../../../../assets/king.svg";
@@ -30,7 +23,7 @@ const Piece = ({ piece, color }: PieceProps) => {
     }
   }, [piece]);
 
-  return PieceSVG ? <PieceSVG /> : <></>;
+  return PieceSVG ? <PieceSVG fill={color} /> : <></>;
 };
 
 const getSVGByPiece = (piece: PIECES | "") => {
